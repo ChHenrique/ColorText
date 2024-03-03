@@ -25,3 +25,7 @@ inputText.addEventListener('keypress', function(e) {
         inputText.value = ''; 
     }
 });
+
+document.body.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+}, { passive: false });
