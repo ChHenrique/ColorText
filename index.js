@@ -28,12 +28,6 @@ inputText.addEventListener('keypress', function(e) {
     }
 });
 
-document.body.addEventListener('touchmove', function(e) {
-    e.preventDefault();
-}, { passive: false });
-
-
-
 const darkButton = document.getElementById('dark');
 let isDarkMode = false;
 
