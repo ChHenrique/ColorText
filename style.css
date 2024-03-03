@@ -1,0 +1,22 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputText{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px; 
+}
+
+#can{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 150px;
+}
+
