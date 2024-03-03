@@ -1,25 +1,49 @@
-body{
-    width: 100vw;
-    height: 100vh;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    background-color: black;
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background-color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#inputText{
+.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+#inputText {
   font-size: 20px;
   border-radius: 20px;
-  padding: 10px; 
+  padding: 10px;
   outline: none;
 }
 
-#can{
+#can {
   font-size: 150px;
 }
 
+#dark{
+  position: absolute;
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  position: absolute;
+
+  top: 10px; /* distância do topo */
+  right: 10px; /* distância da direita */
+  top: 10px; /* distância do topo */
+  right: 10px; /* distância da direita */
+  
+}
+
+#dark:hover{
+  cursor: pointer;
+}

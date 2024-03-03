@@ -1,4 +1,6 @@
 const h1 = document.getElementById('can');
+const darkModeButton = document.getElementById('dark');
+let darkModeEnabled = false;
 
 function handleMouseMove(e) {
     const x = e.touches ? e.touches[0].clientX : e.clientX;
@@ -26,17 +28,39 @@ inputText.addEventListener('keypress', function(e) {
     }
 });
 
-
 document.body.addEventListener('touchmove', function(e) {
     e.preventDefault();
 }, { passive: false });
-
 
 h1.addEventListener('touchstart', function(e) {
     document.body.style.overflow = 'hidden';
 });
 
-
 h1.addEventListener('touchend', function(e) {
     document.body.style.overflow = 'auto';
 });
+
+darkModeButton.addEventListener('click', function() {
+    darkModeEnabled = !darkModeEnabled;
+    if (darkModeEnabled) {
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+    }
+});
+
+const darkButton = document.getElementById('dark');
+let isDarkMode = false;
+
+darkModeButton.addEventListener('click', function() {
+    isDarkMode = !isDarkMode;
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        darkModeButton.textContent = 'Dark mode';
+    } else {
+        document.body.classList.remove('dark-mode');
+        darkModeButton.textContent = 'White mode';
+    }
+});
+
+
