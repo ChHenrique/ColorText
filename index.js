@@ -26,6 +26,17 @@ inputText.addEventListener('keypress', function(e) {
     }
 });
 
+
 document.body.addEventListener('touchmove', function(e) {
     e.preventDefault();
 }, { passive: false });
+
+
+h1.addEventListener('touchstart', function(e) {
+    document.body.style.overflow = 'hidden';
+});
+
+
+h1.addEventListener('touchend', function(e) {
+    document.body.style.overflow = 'auto';
+});
