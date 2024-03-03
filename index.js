@@ -1,8 +1,13 @@
 const h1 = document.getElementById('can');
 
-window.addEventListener('mousemove', function(e) {
-    h1.style.transform = `rotateX(${e.y}deg) rotateY(${e.x}deg)`;
-});
+function handleMouseMove(e) {
+    const x = e.touches ? e.touches[0].clientX : e.clientX;
+    const y = e.touches ? e.touches[0].clientY : e.clientY;
+    h1.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
+}
+
+window.addEventListener('mousemove', handleMouseMove);
+window.addEventListener('touchmove', handleMouseMove);
 
 window.addEventListener('click', (e) => {
     const value1 = Math.floor(Math.random() * 255 + 1);
