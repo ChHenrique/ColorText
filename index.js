@@ -32,22 +32,7 @@ document.body.addEventListener('touchmove', function(e) {
     e.preventDefault();
 }, { passive: false });
 
-h1.addEventListener('touchstart', function(e) {
-    document.body.style.overflow = 'hidden';
-});
 
-h1.addEventListener('touchend', function(e) {
-    document.body.style.overflow = 'auto';
-});
-
-darkModeButton.addEventListener('click', function() {
-    darkModeEnabled = !darkModeEnabled;
-    if (darkModeEnabled) {
-        document.body.classList.add('dark-mode');
-    } else {
-        document.body.classList.remove('dark-mode');
-    }
-});
 
 const darkButton = document.getElementById('dark');
 let isDarkMode = false;
