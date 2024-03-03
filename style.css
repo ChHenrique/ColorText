@@ -8,12 +8,15 @@ body{
     align-items: center;
     overflow: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: black;
 }
 
 #inputText{
   font-size: 20px;
   border-radius: 20px;
   padding: 10px; 
+  outline: none;
 }
 
 #can{
