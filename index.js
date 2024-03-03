@@ -17,6 +17,6 @@ inputText.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
         const palavra = inputText.value.trim();
         h1.textContent = palavra;
-        inputText.value = ''; // Limpa o input após pressionar Enter
+        inputText.value = ''; 
     }
 });
