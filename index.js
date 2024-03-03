@@ -41,5 +41,3 @@ darkModeButton.addEventListener('click', function() {
         darkModeButton.textContent = 'White mode';
     }
 });
-
-
