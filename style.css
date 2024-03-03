@@ -7,17 +7,16 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #inputText{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   border-radius: 20px;
   padding: 10px; 
 }
 
 #can{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 150px;
 }
 
